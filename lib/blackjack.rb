@@ -34,12 +34,22 @@ def initial_round
 end
 
 def hit?(card_total)
+<<<<<<< HEAD
   prompt_user
   loop do
     input = get_user_input
     if input == 'h'
       card_total += deal_card
       break
+=======
+
+  loop do
+    prompt_user
+    input = get_user_input
+    if input == 'h'
+      card_total += deal_card
+      return card_total
+>>>>>>> 0019b2b167ad3821fd441d786ac8ffc7a7768ac9
     elsif input == 's'
       break
     else
@@ -47,7 +57,10 @@ def hit?(card_total)
       prompt_user
     end
   end
+<<<<<<< HEAD
   return card_total
+=======
+>>>>>>> 0019b2b167ad3821fd441d786ac8ffc7a7768ac9
 end
 
 def invalid_command
@@ -58,6 +71,7 @@ end
 #####################################################
 
 def runner
+<<<<<<< HEAD
   welcome
   card_total = initial_round
   until card_total > 21
@@ -65,5 +79,12 @@ def runner
     display_card_total(card_total)
   end
   end_game(card_total)
+=======
+  #welcome
+  #initial_round
+  #prompt_user
+  #hit?
+  #end_game
+>>>>>>> 0019b2b167ad3821fd441d786ac8ffc7a7768ac9
 end  
 
